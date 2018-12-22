@@ -1,10 +1,15 @@
 import requests
+import beautifulsoup
 
 def main():
-    pass
+    url = r'https://movie.douban.com/subject/3878007/'
+
+    response = requests.get(url)
+    with open('./test.txt', 'w', encoding = 'utf8') as file:
+        file.write(response.text)
 
 def testcases():
-    pass
+    main()
 
-if __name__ '__main__':
+if __name__ == '__main__':
     testcases()
