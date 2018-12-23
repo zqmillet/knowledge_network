@@ -8,8 +8,5 @@ def main():
     with open('./test.txt', 'w', encoding = 'utf8') as file:
         file.write(response.text)
 
-def testcases():
-    main()
-
 if __name__ == '__main__':
-    testcases()
+    main()
